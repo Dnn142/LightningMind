@@ -19,8 +19,8 @@
       document.addEventListener('DOMContentLoaded', function () {  
         const video = document.getElementById('vid');  
 
-        // Añadir el evento click al video  
-        video.addEventListener('click', function () {  
+        // Añadir el evento touchstart al video  
+        document.addEventListener('touchstart', function () {  
           if (video.isPlaying) {  
             video.pause();  
           } else {  
